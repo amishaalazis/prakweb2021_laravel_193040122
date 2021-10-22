@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+<nav class="navbar navbar-expand-lg navbar-light bg-info">
   <div class="container">
     <a class="navbar-brand" href="/">Amisha Blog</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,9 +13,11 @@
           <a class="nav-link {{ ($title === "About") ? 'active' : '' }}" href="/about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ ($title === "Posts") ? 'active' : '' }}" href="/blog">Blog</a>
+          <a class="nav-link {{ ($active === "posts") ? 'active' : '' }}" href="/blog">Blog</a>
         </li>
-       
+        <li class="nav-item">
+          <a class="nav-link {{ ($active === "categories") ? 'active' : '' }}" href="/categories">Categories</a>
+        </li>
       </ul>
     </div>
   </div>

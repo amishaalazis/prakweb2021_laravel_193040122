@@ -5,6 +5,14 @@
         <h1 class="h2">My Post</h1>
       </div>
 
+      @if(session()->has('success'))
+      <div class="alert alert-success" role="alert">
+      {{ session('success') }}
+     </div>
+     @endif
+
+
+
       <div class="table-responsive col-lg-8">
         <a href="/dashboard/posts/create" class="btn btn-primary">Create New Post</a>
         <table class="table table-striped table-sm">
